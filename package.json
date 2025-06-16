@@ -1,19 +1,39 @@
 {
   "name": "@uxndigital/eslint-config-next",
-  "version": "8.0.0",
+  "version": "9.0.0",
+  "description": "",
   "author": "UXN Digital",
   "license": "MIT",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public",
-    "tag" : "v8"
+  "files": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "uxndigital/eslint-config-next",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^15.1.2"
+    "@next/eslint-plugin-next": "^15.1.2",
+    "@uxndigital/eslint-config-react": "^9.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "9.x.x"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.2"
   },
   "private": false,
-  "repository": "uxndigital/eslint-config-next",
-  "peerDependencies": {
-    "eslint": "8.x.x"
+  "publishConfig": {
+    "access": "public",
+    "tag": "v9"
   }
 }
