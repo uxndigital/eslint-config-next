@@ -4,7 +4,9 @@
   "description": "",
   "author": "UXN Digital",
   "license": "MIT",
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -26,7 +28,7 @@
     "@uxndigital/eslint-config-react": "^9.0.0"
   },
   "peerDependencies": {
-    "eslint": "9.x.x"
+    "eslint": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.2"
